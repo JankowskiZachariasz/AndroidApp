@@ -21,7 +21,7 @@
 13-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:6:22-62
 14
 15    <application
-15-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:8:5-23:19
+15-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:8:5-32:19
 16        android:allowBackup="true"
 16-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:9:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,26 +33,42 @@
 20-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:11:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
 21-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:12:9-54
-22        android:supportsRtl="true"
+22        android:supportsRtl="true" >
 22-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:13:9-35
-23        android:testOnly="true" >
-24        <activity
-24-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:14:9-22:20
-25            android:name="com.receiptify.MainActivity"
-25-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:15:13-41
-26            android:theme="@style/AppTheme.NoActionBar" >
-26-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:16:13-56
-27            <intent-filter>
-27-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:17:13-21:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:18:17-69
-28-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:18:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:20:17-77
-30-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:20:27-74
-31            </intent-filter>
-32        </activity>
-33    </application>
-34
-35</manifest>
+23        <activity
+23-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:14:9-22:20
+24            android:name="com.receiptify.MainActivity"
+24-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:15:13-41
+25            android:theme="@style/AppTheme.NoActionBar" >
+25-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:16:13-56
+26            <intent-filter>
+26-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:18:17-69
+27-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:20:17-77
+29-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <provider
+34            android:name="androidx.core.content.FileProvider"
+34-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:24:13-62
+35            android:authorities="com.receiptify.FileProvider"
+35-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:25:13-64
+36            android:exported="false"
+36-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:26:13-37
+37            android:grantUriPermissions="true" >
+37-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:27:13-47
+38            <meta-data
+38-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:28:13-30:58
+39                android:name="android.support.FILE_PROVIDER_PATHS"
+39-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:29:17-67
+40                android:resource="@xml/provider_paths" />
+40-->C:\Users\Zachariasz\Desktop\repozytoria\Receiptify\app\src\main\AndroidManifest.xml:30:17-55
+41        </provider>
+42    </application>
+43
+44</manifest>
