@@ -7,7 +7,10 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        //implementation 'com.google.api-client:google-api-client-android:1.23.0' exclude module: 'httpclient'
+        //implementation 'com.google.http-client:google-http-client-gson:1.23.0' exclude module: 'httpclient'
+        //implementation 'com.google.apis:google-api-services-vision:v1-rev369-1.23.0'
         
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
