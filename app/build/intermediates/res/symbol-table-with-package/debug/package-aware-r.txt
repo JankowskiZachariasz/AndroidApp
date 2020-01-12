@@ -1212,6 +1212,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id image_details
 id info
 id invisible
 id italic
@@ -1223,6 +1224,7 @@ id line1
 id line3
 id listMode
 id list_item
+id main_image
 id masked
 id message
 id middle
@@ -1449,14 +1451,22 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string dialog_select_camera
+string dialog_select_gallery
+string dialog_select_prompt
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
+string image_details_header
+string image_picker_error
+string image_preview_header
+string loading_message
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
@@ -2047,3 +2057,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml provider_paths
