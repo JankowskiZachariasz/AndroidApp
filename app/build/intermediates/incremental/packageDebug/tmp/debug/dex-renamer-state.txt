@@ -1,7 +1,7 @@
-#Sun Jan 12 18:33:00 GMT 2020
-base.0=C\:\\Users\\Zachariasz\\Desktop\\repozytoria\\Receiptify\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Mon Jan 20 15:24:51 GMT 2020
+base.0=C\:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\Zachariasz\\Desktop\\repozytoria\\Receiptify\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

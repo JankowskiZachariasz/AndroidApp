@@ -6,70 +6,88 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml
+8-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml
+9-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:5:5-79
-12-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:5:22-77
+12-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:5:22-77
 13    <uses-permission android:name="android.permission.CAMERA" />
-13-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:6:5-64
-13-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:6:22-62
+13-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:5-64
+13-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:22-62
 14
 15    <application
-15-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:8:5-32:19
+15-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:8:5-32:19
 16        android:allowBackup="true"
-16-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:9:9-35
+16-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:9:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.1.0] C:\Users\Suika\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.1.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:10:9-43
+19-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:10:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:11:9-41
+20-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:11:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:12:9-54
+21-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:12:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:13:9-35
+22-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:13:9-35
 23        android:testOnly="true" >
 24        <activity
-24-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:14:9-22:20
+24-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:14:9-22:20
 25            android:name="com.receiptify.MainActivity"
-25-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:15:13-41
+25-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:15:13-41
 26            android:theme="@style/AppTheme.NoActionBar" >
-26-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:16:13-56
+26-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:16:13-56
 27            <intent-filter>
-27-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:17:13-21:29
+27-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:17:13-21:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:18:17-69
-28-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:18:25-66
+28-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:17-69
+28-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:20:17-77
-30-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:20:27-74
+30-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:20:17-77
+30-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:20:27-74
 31            </intent-filter>
 32        </activity>
 33
 34        <provider
 35            android:name="androidx.core.content.FileProvider"
-35-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:24:13-62
+35-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:24:13-62
 36            android:authorities="com.receiptify.FileProvider"
-36-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:25:13-64
+36-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:25:13-64
 37            android:exported="false"
-37-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:26:13-37
+37-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:26:13-37
 38            android:grantUriPermissions="true" >
-38-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:27:13-47
+38-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:27:13-47
 39            <meta-data
-39-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:28:13-30:58
+39-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:28:13-30:58
 40                android:name="android.support.FILE_PROVIDER_PATHS"
-40-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:29:17-67
+40-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:29:17-67
 41                android:resource="@xml/provider_paths" />
-41-->C:\Users\Suika\GitHub\app\src\main\AndroidManifest.xml:30:17-55
+41-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:30:17-55
 42        </provider>
-43    </application>
-44
-45</manifest>
+43
+44        <service
+44-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+45            android:name="androidx.room.MultiInstanceInvalidationService"
+45-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+46            android:exported="false" />
+46-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+47
+48        <provider
+48-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:25:9-29:43
+49            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+49-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:26:13-79
+50            android:authorities="com.receiptify.lifecycle-process"
+50-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:27:13-69
+51            android:exported="false"
+51-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:28:13-37
+52            android:multiprocess="true" />
+52-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:29:13-40
+53    </application>
+54
+55</manifest>
