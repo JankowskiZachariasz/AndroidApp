@@ -21,6 +21,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true" >
+        <activity android:name="com.receiptify.activities.Statistics" />
+        <activity android:name="com.receiptify.activities.Settings" />
+        <activity android:name="com.receiptify.activities.Products" />
+        <activity android:name="com.receiptify.activities.Receipts" />
         <activity
             android:name="com.receiptify.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >

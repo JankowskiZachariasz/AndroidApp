@@ -21,6 +21,18 @@ import androidx.room.Database;
 import androidx.room.Room;
 
 import android.content.Context;
+
+import com.receiptify.data.Entities.Companies;
+import com.receiptify.data.Entities.CompaniesDao;
+import com.receiptify.data.Entities.Products;
+import com.receiptify.data.Entities.ProductsDao;
+import com.receiptify.data.Entities.Receipt_single_entry;
+import com.receiptify.data.Entities.Receipt_single_entryDao;
+import com.receiptify.data.Entities.Receipts;
+import com.receiptify.data.Entities.ReceiptsDao;
+import com.receiptify.data.Entities.Word;
+import com.receiptify.data.Entities.WordDao;
+
 import androidx.annotation.NonNull;
 
 import java.util.concurrent.ExecutorService;
@@ -32,10 +44,14 @@ import java.util.concurrent.Executors;
  * app, consider exporting the schema to help you with migrations.
  */
 
-@Database(entities = {Word.class}, version = 1, exportSchema = false)
+@Database(entities = {Word.class, Receipts.class, Receipt_single_entry.class, Products.class, Companies.class}, version = 3, exportSchema = true)
 abstract class RoomDatabase extends androidx.room.RoomDatabase {
 
     abstract WordDao wordDao();
+    abstract ReceiptsDao receiptsDao();
+    abstract Receipt_single_entryDao receipt_single_entry();
+    abstract ProductsDao products();
+    abstract CompaniesDao companies();
 
     // marking the instance as volatile to ensure atomic access to the variable
     private static volatile RoomDatabase INSTANCE;
@@ -49,6 +65,7 @@ abstract class RoomDatabase extends androidx.room.RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             RoomDatabase.class, "data.db")
+                            //.addCallback(sRoomDatabaseCallback)
                             .createFromAsset("data.db")
                             .build();
                 }
@@ -75,7 +92,23 @@ abstract class RoomDatabase extends androidx.room.RoomDatabase {
                 // Populate the database in the background.
                 // If you want to start with more words, just add them.
                 WordDao dao = INSTANCE.wordDao();
+                ReceiptsDao rDao = INSTANCE.receiptsDao();
+
+                Receipt_single_entryDao rseDao = INSTANCE.receipt_single_entry();
+                ProductsDao pDao = INSTANCE.products();
+                CompaniesDao cDao = INSTANCE.companies();
+
                 dao.deleteAll();
+                rDao.deleteAll();
+
+                Receipts r = new Receipts("1","12","1","1s2d2d");
+                Receipts s = new Receipts("2","13","2","1s2r44");
+                Receipts t = new Receipts("3","15","1","1s2g55");
+                Receipts u = new Receipts("4","17","4","1s2j98");
+                rDao.insert(r);
+                rDao.insert(s);
+                rDao.insert(t);
+                rDao.insert(u);
 
                 Word word = new Word("Hello");
                 dao.insert(word);

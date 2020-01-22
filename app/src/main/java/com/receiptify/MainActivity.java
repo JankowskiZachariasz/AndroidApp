@@ -2,6 +2,7 @@ package com.receiptify;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.ReceiverCallNotAllowedException;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -23,8 +24,15 @@ import com.google.api.services.vision.v1.model.BatchAnnotateImagesResponse;
 import com.google.api.services.vision.v1.model.Feature;
 import com.google.api.services.vision.v1.model.Image;
 import com.google.api.services.vision.v1.model.TextAnnotation;
+import com.getbase.floatingactionbutton.FloatingActionButton;
 
+import com.receiptify.activities.Products;
+import com.receiptify.activities.Settings;
+import com.receiptify.activities.Statistics;
+import com.receiptify.activities.Receipts;
 import com.receiptify.data.DBViewModel;
+import com.receiptify.data.Entities.Companies;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -34,6 +42,8 @@ import androidx.lifecycle.ViewModelProvider;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,6 +53,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+import java.util.List;
 
 import static android.graphics.Color.argb;
 
@@ -75,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         createFabMenu();
+        buttons();
 
         mImageDetails = findViewById(R.id.image_details);
         mMainImage = findViewById(R.id.main_image);
@@ -102,36 +114,93 @@ public class MainActivity extends AppCompatActivity {
         //db reference object (you need it to make changes nad read db contents)
         DBreference = new ViewModelProvider(this).get(DBViewModel.class);
         // Update the cached copy of the words to the TextView
-        DBreference.getAllWords().observe(this, words -> {
+        DBreference.getAllCompanies().observe(this, words -> {
 
             String s="";
             for(int i=0;i<words.size();i++)
-                 s += words.get(i).getWord()+" ";
+                 s += words.get(i).getName()+" ";
             mImageDetails.setText(s);
 
         });
 
+
     }
+
+    void buttons(){
+        {
+            Button a = findViewById(R.id.receipts);
+            a.setOnClickListener(this::goReceipts);
+        }
+        {
+            Button a = findViewById(R.id.products);
+            a.setOnClickListener(this::goProducts);
+        }
+        {
+            Button a = findViewById(R.id.settings);
+            a.setOnClickListener(this::goSettings);
+        }
+        {
+            Button a = findViewById(R.id.statistics);
+            a.setOnClickListener(this::goStatistics);
+        }
+    }
+
+    void goReceipts(View view) {
+        Intent a = new Intent(this, Receipts.class);
+        startActivity(a);
+
+    }
+    void goStatistics(View view) {
+        Intent a = new Intent(this, Statistics.class);
+        startActivity(a);
+
+    }
+    void goSettings(View view) {
+        Intent a = new Intent(this, Settings.class);
+        startActivity(a);
+
+    }
+    void goProducts(View view) {
+        Intent a = new Intent(this, Products.class);
+        startActivity(a);
+
+    }
+
 
     void createFabMenu(){
 
         final FloatingActionsMenu menuMultipleActions = findViewById(R.id.multiple_actions);
 
-        com.getbase.floatingactionbutton.FloatingActionButton takePhoto = new com.getbase.floatingactionbutton.FloatingActionButton(getBaseContext());
+        FloatingActionButton takePhoto = new FloatingActionButton(getBaseContext());
         takePhoto.setColorNormal(argb(255,255,0,0));
         takePhoto.setTitle("take a photo");
         takePhoto.setOnClickListener(v -> {startCamera();menuMultipleActions.collapse();});
 
 
-        com.getbase.floatingactionbutton.FloatingActionButton loadPhoto = new com.getbase.floatingactionbutton.FloatingActionButton(getBaseContext());
+        FloatingActionButton loadPhoto = new FloatingActionButton(getBaseContext());
         loadPhoto.setColorNormal(argb(255,0,255,0));
         loadPhoto.setTitle("point app to an existing photo from the phone's storage");
         loadPhoto.setOnClickListener(v -> {startGalleryChooser(); menuMultipleActions.collapse();});
+
+//        FloatingActionButton addDB = new FloatingActionButton(getBaseContext());
+//        addDB.setColorNormal(argb(255,0,0,255));
+//        addDB.setTitle("addDB");
+//        addDB.setOnClickListener(v -> {
+//
+//
+//            List<Companies> receipts = DBreference.getAllCompanies().getValue();
+//            for(int i=0; i<receipts.size();i++)
+//            {
+//                if(!receipts.get(i).getId().equals("1"))
+//                    DBreference.delete(receipts.get(i));
+//            }
+//        });
 
 
 
         menuMultipleActions.addButton(takePhoto);
         menuMultipleActions.addButton(loadPhoto);
+        //menuMultipleActions.addButton(addDB);
 
     }
 
@@ -181,10 +250,10 @@ public class MainActivity extends AppCompatActivity {
             int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
-            case CAMERA_PERMISSIONS_REQUEST:
-                if (PermissionUtils.permissionGranted(requestCode, CAMERA_PERMISSIONS_REQUEST, grantResults)) {
-                    startCamera();
-                }
+            case CAMERA_PERMISSIONS_REQUEST:{
+                startCamera();
+            }
+                if (PermissionUtils.permissionGranted(requestCode, CAMERA_PERMISSIONS_REQUEST, grantResults))
                 break;
             case GALLERY_PERMISSIONS_REQUEST:
                 if (PermissionUtils.permissionGranted(requestCode, GALLERY_PERMISSIONS_REQUEST, grantResults)) {

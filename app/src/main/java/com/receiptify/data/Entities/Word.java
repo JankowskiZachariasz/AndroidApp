@@ -1,4 +1,4 @@
-package com.receiptify.data;
+package com.receiptify.data.Entities;
 
 /*
  * Copyright (C) 2017 Google Inc.
