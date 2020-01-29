@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_navigation"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/products2"
+        android:name="com.receiptify.activities.Products"
+        android:label="activity_products"
+        tools:layout="@layout/activity_products" />
+    <activity
+        android:id="@+id/statistics2"
+        android:name="com.receiptify.activities.Statistics"
+        android:label="activity_statistics"
+        tools:layout="@layout/activity_statistics" />
+    <activity
+        android:id="@+id/settings2"
+        android:name="com.receiptify.activities.Settings"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <activity
+        android:id="@+id/receipts2"
+        android:name="com.receiptify.activities.Receipts"
+        android:label="activity_receipts"
+        tools:layout="@layout/activity_receipts" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.receiptify.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_products2"
+            app:destination="@id/products2"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/action_mainActivity_to_receipts2"
+            app:destination="@id/receipts2"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_mainActivity_to_settings2"
+            app:destination="@id/settings2"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/action_mainActivity_to_statistics2"
+            app:destination="@id/statistics2"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+    </activity>
+</navigation>
