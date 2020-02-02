@@ -2,7 +2,6 @@ package com.receiptify;
 
 import android.Manifest;
 import android.content.Intent;
-import android.content.ReceiverCallNotAllowedException;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -27,17 +26,18 @@ import com.google.api.services.vision.v1.model.TextAnnotation;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 
 import com.receiptify.activities.Products;
+import com.receiptify.activities.ReceiptsView;
 import com.receiptify.activities.Settings;
 import com.receiptify.activities.Statistics;
-import com.receiptify.activities.Receipts;
 import com.receiptify.data.DBViewModel;
-import com.receiptify.data.Entities.Companies;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.FileProvider;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
 
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -53,7 +53,6 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import java.util.List;
 
 import static android.graphics.Color.argb;
 
@@ -73,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mImageDetails;
     private ImageView mMainImage;
+
 
 
     //private ReceiptsViewModel DBreference;
@@ -146,8 +146,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void goReceipts(View view) {
-        Intent a = new Intent(this, Receipts.class);
+        Intent a = new Intent(this,ReceiptsView.class);
         startActivity(a);
+
 
     }
     void goStatistics(View view) {
