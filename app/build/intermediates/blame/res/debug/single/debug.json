@@ -1408,6 +1408,10 @@
         "source": "C:\\Users\\Zachariasz\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
         "merged": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Zachariasz\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
@@ -1818,6 +1822,10 @@
     {
         "merged": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Zachariasz\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_receipt.xml.flat",
+        "source": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\src\\main\\res\\layout\\activity_add_receipt.xml"
     },
     {
         "merged": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
