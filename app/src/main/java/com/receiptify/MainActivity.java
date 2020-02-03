@@ -10,6 +10,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
+import com.google.android.material.navigation.NavigationView;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.http.HttpTransport;
@@ -34,14 +35,22 @@ import com.receiptify.data.DBViewModel;
 import com.receiptify.data.Entities.Companies;
 
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.FileProvider;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
+import androidx.navigation.Navigation;
 
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -57,7 +66,7 @@ import java.util.List;
 
 import static android.graphics.Color.argb;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private static String CLOUD_VISION_API_KEY;
     public static final String FILE_NAME = "temp.jpg";
@@ -73,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mImageDetails;
     private ImageView mMainImage;
+    private DrawerLayout drawer;
 
 
     //private ReceiptsViewModel DBreference;
@@ -86,11 +96,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         createFabMenu();
-        buttons();
 
+        drawer = findViewById(R.id.drawer_layout);
+        setNavigationViewListener();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.nav_app_bar_open_drawer_description, R.string.nav_app_bar_navigate_up_description);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+        //buttons();
         mImageDetails = findViewById(R.id.image_details);
         mMainImage = findViewById(R.id.main_image);
-
         /**
          * The database has only one table at the moment
          * you can find db schema in app/schemas
@@ -112,58 +126,91 @@ public class MainActivity extends AppCompatActivity {
          */
 
         //db reference object (you need it to make changes nad read db contents)
-        DBreference = new ViewModelProvider(this).get(DBViewModel.class);
-        // Update the cached copy of the words to the TextView
-        DBreference.getAllCompanies().observe(this, words -> {
-
-            String s="";
-            for(int i=0;i<words.size();i++)
-                 s += words.get(i).getName()+" ";
-            mImageDetails.setText(s);
-
-        });
-
-
+//       DBreference = new ViewModelProvider(this).get(DBViewModel.class);
+//        // Update the cached copy of the words to the TextView
+//        DBreference.getAllCompanies().observe(this, words -> {
+//
+//            String s="";
+//            for(int i=0;i<words.size();i++)
+//                 s += words.get(i).getName()+" ";
+//            mImageDetails.setText(s);
+//
+//        });
     }
 
-    void buttons(){
-        {
-            Button a = findViewById(R.id.receipts);
-            a.setOnClickListener(this::goReceipts);
-        }
-        {
-            Button a = findViewById(R.id.products);
-            a.setOnClickListener(this::goProducts);
-        }
-        {
-            Button a = findViewById(R.id.settings);
-            a.setOnClickListener(this::goSettings);
-        }
-        {
-            Button a = findViewById(R.id.statistics);
-            a.setOnClickListener(this::goStatistics);
+    @Override
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen((GravityCompat.START))) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
     }
 
-    void goReceipts(View view) {
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.receipts_message:
+                goReceipts();
+                break;
+
+            case R.id.stats_message:
+                goStatistics();
+                break;
+
+            case R.id.products_message:
+                goProducts();
+                break;
+
+            case R.id.settings_message:
+                goSettings();
+                break;
+        }
+        return true;
+    }
+
+    //listener for drawer items
+    private void setNavigationViewListener() {
+        NavigationView navigationView = (findViewById(R.id.nav_view));
+        navigationView.setNavigationItemSelectedListener(this);
+    }
+//    void buttons(){
+//        {
+//            Button a = findViewById(R.id.receipts);
+//            a.setOnClickListener(this::goReceipts);
+//        }
+//        {
+//            Button a = findViewById(R.id.products);
+//            a.setOnClickListener(this::goProducts);
+//        }
+//        {
+//            Button a = findViewById(R.id.settings);
+//            a.setOnClickListener(this::goSettings);
+//        }
+//        {
+//            Button a = findViewById(R.id.statistics);
+//            a.setOnClickListener(this::goStatistics);
+//        }
+//    }
+
+    void goReceipts() {
         Intent a = new Intent(this, Receipts.class);
         startActivity(a);
 
     }
-    void goStatistics(View view) {
+    void goStatistics() {
         Intent a = new Intent(this, Statistics.class);
         startActivity(a);
 
     }
-    void goSettings(View view) {
+    void goSettings() {
         Intent a = new Intent(this, Settings.class);
         startActivity(a);
 
     }
-    void goProducts(View view) {
+    void goProducts() {
         Intent a = new Intent(this, Products.class);
         startActivity(a);
-
     }
 
 
