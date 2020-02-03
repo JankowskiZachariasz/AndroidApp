@@ -227,7 +227,12 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(intent, CAMERA_IMAGE_REQUEST);
         }
     }
-
+    // code modification - 1903021
+    public void viewData(View view) {
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+    }
+    // end
     public File getCameraFile() {
         File dir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         return new File(dir.getPath(), FILE_NAME);
