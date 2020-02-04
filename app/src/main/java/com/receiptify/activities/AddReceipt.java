@@ -16,6 +16,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,12 +40,17 @@ import com.receiptify.MainActivity;
 import com.receiptify.PackageManagerUtils;
 import com.receiptify.PermissionUtils;
 import com.receiptify.R;
-
+import com.receiptify.data.DBViewModel;
+import com.receiptify.data.Entities.Receipts;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 
 public class AddReceipt extends AppCompatActivity {
 
@@ -62,8 +69,15 @@ public class AddReceipt extends AppCompatActivity {
     private ImageView mMainImage;
 
 
+    private DBViewModel db;
+    private EditText price;
+    private EditText company;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        db=MainActivity.DBreference;
+
         CLOUD_VISION_API_KEY = getString(R.string.CLOUD_VISION_API_KEY);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_receipt);
@@ -73,10 +87,39 @@ public class AddReceipt extends AppCompatActivity {
         mImageDetails = findViewById(R.id.addInfo);
         mMainImage = findViewById(R.id.receipt);
 
+        price = findViewById(R.id.editText3);
+        company = findViewById(R.id.editText);
+
         switch(getIntent().getAction()){
             case("take a photo"):{startCamera(); break;}
             case("gallery"):{startGalleryChooser(); break;}
         }
+
+
+
+
+
+
+    }
+
+    public void analyze_text(String result){
+
+
+
+        //Log.i("RESULT",result);
+        if (result.contains("TOTAL")) {
+            price.setText("£ "+result.subSequence(result.indexOf("TOTAL")+6,result.indexOf("TOTAL")+12));
+        }
+        company.setText("Lidl UK");
+    }
+
+    public void addToDB(View view) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        Date today =Calendar.getInstance().getTime();
+        int newid = db.getAllReceipts().getValue().size()+1;
+        Receipts r = new Receipts(Integer.toString(newid), dateFormat.format(today) ,"LidlUK",price.getText().toString());
+        db.insert(r);
 
 
 
@@ -265,6 +308,8 @@ public class AddReceipt extends AppCompatActivity {
             if (activity != null && !activity.isFinishing()) {
                 TextView imageDetail = activity.findViewById(R.id.addInfo);
                 imageDetail.setText(result);
+                activity.analyze_text(result);
+
             }
         }
     }

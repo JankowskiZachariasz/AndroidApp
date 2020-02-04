@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static final int CAMERA_IMAGE_REQUEST = 3;
     public static DBViewModel DBreference;
     private DrawerLayout drawer;
+
     public static TextView mImageDetails;
     private ImageView mMainImage;
 
@@ -112,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         createFabMenu();
         DBreference = new DBViewModel(this.getApplication());
         startService(new Intent(this,DataSyncService.class).setAction("initialize"));
+
         drawer = findViewById(R.id.drawer_layout);
         setNavigationViewListener();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.nav_app_bar_open_drawer_description, R.string.nav_app_bar_navigate_up_description);
@@ -152,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
+
     }
 
     public void onBackPressed() {
@@ -159,7 +162,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-
         }
     }
 
@@ -193,6 +195,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     void goReceipts() {
+
 
         Intent a = new Intent(this,ReceiptsView.class);
         startActivity(a);
@@ -236,7 +239,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         loadPhoto.setOnClickListener(v -> {
 
 
-
             Intent a = new Intent(this, AddReceipt.class).setAction("gallery");
             startActivity(a);
             menuMultipleActions.collapse();});
@@ -248,10 +250,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-            startService(new Intent(this,DataSyncService.class).setAction("companies"));
+
+            //startService(new Intent(this,DataSyncService.class).setAction("companies"));
 
             //login();
-
+            Intent a = new Intent(this, AddReceipt.class).setAction("manually");
+            startActivity(a);
+            menuMultipleActions.collapse();
 
         });
 

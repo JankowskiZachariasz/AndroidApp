@@ -40,8 +40,7 @@ public class ReceiptsView extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        // Get a new or existing ViewModel from the ViewModelProvider.
-        DBViewModel mDBViewModel = new ViewModelProvider(this).get(DBViewModel.class);
+       
 
 
         // Add an observer on the LiveData returned by getAlphabetizedWords.
@@ -49,7 +48,9 @@ public class ReceiptsView extends AppCompatActivity {
         // in the foreground.
 
 
-        mDBViewModel.getAllReceipts().observe(this, new Observer<List<Receipts>>() {
+
+        MainActivity.DBreference.getAllReceipts().observe(this, new Observer<List<Receipts>>() {
+
             @Override
             public void onChanged(@Nullable final List<Receipts> words) {
                 // Update the cached copy of the words in the adapter.
