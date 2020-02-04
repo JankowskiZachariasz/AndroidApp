@@ -27,13 +27,6 @@
                 android:layout_marginBottom="8dp"
                 android:text="Use the floating action button to select an image." />
 
-            <Button
-                android:id="@+id/dataCapture"
-                android:layout_width="401dp"
-                android:layout_height="wrap_content"
-                android:onClick="viewData"
-                android:text="Data Capture View" />
-
             <ImageView
                 android:id="@+id/main_image"
                 android:layout_width="match_parent"

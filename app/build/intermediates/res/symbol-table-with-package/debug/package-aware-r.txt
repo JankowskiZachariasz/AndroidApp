@@ -1156,6 +1156,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addInfo
 id alertTitle
 id all
 id always
@@ -1165,6 +1166,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button
 id buttonPanel
 id center
 id center_horizontal
@@ -1194,6 +1196,12 @@ id dimensions
 id direct
 id disableHome
 id down
+id editText
+id editText2
+id editText3
+id editText4
+id editText5
+id editText6
 id edit_query
 id end
 id enterAlways
@@ -1263,7 +1271,9 @@ id products
 id progress_circular
 id progress_horizontal
 id radio
+id receipt
 id receipts
+id recyclerview
 id right
 id right_icon
 id right_side
@@ -1325,6 +1335,13 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1334,6 +1351,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toolbar
+id toolbarReceipts
 id top
 id topPanel
 id touch_outside
@@ -1407,6 +1425,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_receipt
 layout activity_main
 layout activity_products
 layout activity_receipts
@@ -1436,6 +1455,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recyclerview_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1997,7 +2017,7 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
-style receipts_title
+style receipts
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -2079,4 +2099,5 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml network_security_config
 xml provider_paths

@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:29:9-37:20
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:52:9-60:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:33:13-47
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:56:13-47
 	android:authorities
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:31:13-64
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:54:13-64
 	android:exported
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:30:13-62
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:53:13-62
 manifest
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7c52bbaa135867550dc56ea103a2eaa7\jetified-floatingactionbutton-1.10.1\AndroidManifest.xml:2:1-14:12
@@ -57,37 +57,39 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Zachariasz\.grad
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
 	package
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:3:5-29
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:1-63:12
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:7:5-65
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:8:22-62
 application
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:9:5-38:19
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:10:5-61:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7c52bbaa135867550dc56ea103a2eaa7\jetified-floatingactionbutton-1.10.1\AndroidManifest.xml:12:5-20
@@ -107,47 +109,79 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Zacharia
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:13:9-41
+	tools:ignore
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:9-48
 	android:roundIcon
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:10:9-35
-activity#com.receiptify.activities.Statistics
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:15:9-68
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:11:9-35
+	android:networkSecurityConfig
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:14:9-69
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:17:9-44
+service#com.receiptify.DataSyncService
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:20:9-23:39
+	android:enabled
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:22:13-35
+	android:exported
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:15:19-56
-activity#com.receiptify.activities.Settings
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:16:9-57
-	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:16:19-54
-activity#com.receiptify.activities.Products
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:17:9-57
-	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:17:19-54
-activity#com.receiptify.activities.Receipts
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:9-57
-	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:19-54
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:21:13-44
 activity#com.receiptify.MainActivity
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:19:9-27:20
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:theme
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:27:13-56
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:26:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:31:27-74
+activity#com.receiptify.activities.ReceiptsView
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:34:9-37:59
+	android:parentActivityName
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:36:13-55
+	android:theme
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:37:13-56
+	android:name
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:35:13-52
+activity#com.receiptify.activities.AddReceipt
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:38:9-41:59
+	android:parentActivityName
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:40:13-55
+	android:theme
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:41:13-56
+	android:name
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:39:13-50
+activity#com.receiptify.activities.Products
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:42:9-44:58
+	android:parentActivityName
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:44:13-55
+	android:name
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:43:13-48
+activity#com.receiptify.activities.Settings
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:45:9-47:58
+	android:parentActivityName
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:47:13-55
+	android:name
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:46:13-48
+activity#com.receiptify.activities.Statistics
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:48:9-50:58
+	android:parentActivityName
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:50:13-55
+	android:name
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:49:13-50
 uses-sdk
 INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
@@ -247,11 +281,11 @@ INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\And
 		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:34:13-36:58
+ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:57:13-59:58
 	android:resource
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:36:17-55
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:59:17-55
 	android:name
-		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:35:17-67
+		ADDED from C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:58:17-67
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
 	android:exported
