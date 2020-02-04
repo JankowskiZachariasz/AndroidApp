@@ -6,100 +6,135 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
+8-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml
+9-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:5-80
-12-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:6:22-77
+12-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:7:5-80
+12-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:7:22-77
 13    <uses-permission android:name="android.permission.CAMERA" />
-13-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:7:5-65
-13-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:7:22-62
+13-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:8:5-65
+13-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:8:22-62
 14
 15    <application
-15-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:9:5-38:19
+15-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:10:5-61:19
 16        android:allowBackup="true"
-16-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:10:9-35
+16-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:11:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 17-->[androidx.core:core:1.1.0] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:11:9-43
+19-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:12:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:12:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:13:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:14:9-35
-23        android:testOnly="true" >
-24        <activity android:name="com.receiptify.activities.Statistics" />
-24-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:15:9-68
-24-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:15:19-56
-25        <activity android:name="com.receiptify.activities.Settings" />
-25-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:16:9-57
-25-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:16:19-54
-26        <activity android:name="com.receiptify.activities.Products" />
-26-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:17:9-57
-26-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:17:19-54
-27        <activity android:name="com.receiptify.activities.Receipts" />
-27-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:9-57
-27-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:18:19-54
-28        <activity
-28-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:19:9-27:20
-29            android:name="com.receiptify.MainActivity"
-29-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:20:13-41
-30            android:theme="@style/AppTheme.NoActionBar" >
-30-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:21:13-56
-31            <intent-filter>
-31-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:22:13-26:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:23:17-69
-32-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:23:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:25:17-77
-34-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:25:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <provider
-39            android:name="androidx.core.content.FileProvider"
-39-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:30:13-62
-40            android:authorities="com.receiptify.FileProvider"
-40-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:31:13-64
-41            android:exported="false"
-41-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:32:13-37
-42            android:grantUriPermissions="true" >
-42-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:33:13-47
-43            <meta-data
-43-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:34:13-36:58
-44                android:name="android.support.FILE_PROVIDER_PATHS"
-44-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:35:17-67
-45                android:resource="@xml/provider_paths" />
-45-->C:\Users\Zachariasz\Desktop\Current Group Project\app\src\main\AndroidManifest.xml:36:17-55
-46        </provider>
-47
-48        <service
-48-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
-49            android:name="androidx.room.MultiInstanceInvalidationService"
-49-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
-50            android:exported="false" />
-50-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
-51
-52        <provider
-52-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:25:9-29:43
-53            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:26:13-79
-54            android:authorities="com.receiptify.lifecycle-process"
-54-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:27:13-69
-55            android:exported="false"
-55-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:28:13-37
-56            android:multiprocess="true" />
-56-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:29:13-40
-57    </application>
-58
-59</manifest>
+20-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:13:9-41
+21        android:networkSecurityConfig="@xml/network_security_config"
+21-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:14:9-69
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:15:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:16:9-35
+24        android:testOnly="true"
+25        android:usesCleartextTraffic="true" >
+25-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:17:9-44
+26        <service
+26-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:20:9-23:39
+27            android:name="com.receiptify.DataSyncService"
+27-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:21:13-44
+28            android:enabled="true"
+28-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:22:13-35
+29            android:exported="true" />
+29-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:23:13-36
+30
+31        <activity
+31-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:25:9-33:20
+32            android:name="com.receiptify.MainActivity"
+32-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:26:13-41
+33            android:theme="@style/AppTheme.NoActionBar" >
+33-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:27:13-56
+34            <intent-filter>
+34-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:28:13-32:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:29:17-69
+35-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:29:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:31:17-77
+37-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:31:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:34:9-37:59
+41            android:name="com.receiptify.activities.ReceiptsView"
+41-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:35:13-52
+42            android:parentActivityName="com.receiptify.MainActivity"
+42-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:36:13-55
+43            android:theme="@style/AppTheme.NoActionBar" />
+43-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:37:13-56
+44        <activity
+44-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:38:9-41:59
+45            android:name="com.receiptify.activities.AddReceipt"
+45-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:39:13-50
+46            android:parentActivityName="com.receiptify.MainActivity"
+46-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:40:13-55
+47            android:theme="@style/AppTheme.NoActionBar" />
+47-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:41:13-56
+48        <activity
+48-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:42:9-44:58
+49            android:name="com.receiptify.activities.Products"
+49-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:43:13-48
+50            android:parentActivityName="com.receiptify.MainActivity" />
+50-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:44:13-55
+51        <activity
+51-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:45:9-47:58
+52            android:name="com.receiptify.activities.Settings"
+52-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:46:13-48
+53            android:parentActivityName="com.receiptify.MainActivity" />
+53-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:47:13-55
+54        <activity
+54-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:48:9-50:58
+55            android:name="com.receiptify.activities.Statistics"
+55-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:49:13-50
+56            android:parentActivityName="com.receiptify.MainActivity" />
+56-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:50:13-55
+57
+58        <provider
+59            android:name="androidx.core.content.FileProvider"
+59-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:53:13-62
+60            android:authorities="com.receiptify.FileProvider"
+60-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:54:13-64
+61            android:exported="false"
+61-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:55:13-37
+62            android:grantUriPermissions="true" >
+62-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:56:13-47
+63            <meta-data
+63-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:57:13-59:58
+64                android:name="android.support.FILE_PROVIDER_PATHS"
+64-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:58:17-67
+65                android:resource="@xml/provider_paths" />
+65-->C:\Users\Zachariasz\Desktop\zackk\app\src\main\AndroidManifest.xml:59:17-55
+66        </provider>
+67
+68        <service
+68-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+69            android:name="androidx.room.MultiInstanceInvalidationService"
+69-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+70            android:exported="false" />
+70-->[androidx.room:room-runtime:2.2.3] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\8087ce3aa41c0a061e5127f60844c52f\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+71
+72        <provider
+72-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:25:9-29:43
+73            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:26:13-79
+74            android:authorities="com.receiptify.lifecycle-process"
+74-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:27:13-69
+75            android:exported="false"
+75-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:28:13-37
+76            android:multiprocess="true" />
+76-->[androidx.lifecycle:lifecycle-process:2.2.0-rc03] C:\Users\Zachariasz\.gradle\caches\transforms-2\files-2.1\7fa2525f37a375f4a87b458fc02563ba\lifecycle-process-2.2.0-rc03\AndroidManifest.xml:29:13-40
+77    </application>
+78
+79</manifest>

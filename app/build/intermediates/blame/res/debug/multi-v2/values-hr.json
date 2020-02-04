@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Zachariasz\\Desktop\\Current Group Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hr\\values-hr.xml",
+            "outputFile": "C:\\Users\\Zachariasz\\Desktop\\zackk\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hr\\values-hr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Zachariasz\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-hr\\values-hr.xml",
