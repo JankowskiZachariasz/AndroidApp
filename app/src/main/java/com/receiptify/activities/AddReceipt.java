@@ -42,7 +42,6 @@ import com.receiptify.PermissionUtils;
 import com.receiptify.R;
 import com.receiptify.data.DBViewModel;
 import com.receiptify.data.Entities.Receipts;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -69,6 +68,7 @@ public class AddReceipt extends AppCompatActivity {
     public static TextView mImageDetails;
     private ImageView mMainImage;
 
+
     private DBViewModel db;
     private EditText price;
     private EditText company;
@@ -77,6 +77,7 @@ public class AddReceipt extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         db=MainActivity.DBreference;
+
         CLOUD_VISION_API_KEY = getString(R.string.CLOUD_VISION_API_KEY);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_receipt);
@@ -85,6 +86,7 @@ public class AddReceipt extends AppCompatActivity {
         setSupportActionBar(toolbar);
         mImageDetails = findViewById(R.id.addInfo);
         mMainImage = findViewById(R.id.receipt);
+
         price = findViewById(R.id.editText3);
         company = findViewById(R.id.editText);
 
@@ -92,6 +94,7 @@ public class AddReceipt extends AppCompatActivity {
             case("take a photo"):{startCamera(); break;}
             case("gallery"):{startGalleryChooser(); break;}
         }
+
 
 
 
@@ -117,6 +120,8 @@ public class AddReceipt extends AppCompatActivity {
         int newid = db.getAllReceipts().getValue().size()+1;
         Receipts r = new Receipts(Integer.toString(newid), dateFormat.format(today) ,"LidlUK",price.getText().toString());
         db.insert(r);
+
+
 
     }
 
@@ -304,6 +309,7 @@ public class AddReceipt extends AppCompatActivity {
                 TextView imageDetail = activity.findViewById(R.id.addInfo);
                 imageDetail.setText(result);
                 activity.analyze_text(result);
+
             }
         }
     }

@@ -13,6 +13,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
+import com.google.android.material.navigation.NavigationView;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.http.HttpTransport;
@@ -39,9 +40,12 @@ import com.receiptify.activities.Statistics;
 import com.receiptify.data.DBViewModel;
 
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.FileProvider;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.ViewModelProvider;
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -59,6 +63,7 @@ import android.os.IBinder;
 import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -73,7 +78,7 @@ import java.util.ArrayList;
 
 import static android.graphics.Color.argb;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private static String CLOUD_VISION_API_KEY;
     public static final String FILE_NAME = "temp.jpg";
@@ -87,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int CAMERA_PERMISSIONS_REQUEST = 2;
     public static final int CAMERA_IMAGE_REQUEST = 3;
     public static DBViewModel DBreference;
+    private DrawerLayout drawer;
 
     public static TextView mImageDetails;
     private ImageView mMainImage;
@@ -107,6 +113,12 @@ public class MainActivity extends AppCompatActivity {
         createFabMenu();
         DBreference = new DBViewModel(this.getApplication());
         startService(new Intent(this,DataSyncService.class).setAction("initialize"));
+
+        drawer = findViewById(R.id.drawer_layout);
+        setNavigationViewListener();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.nav_app_bar_open_drawer_description, R.string.nav_app_bar_navigate_up_description);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
 
        {
@@ -140,46 +152,67 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
     }
 
-
-
-    void buttons(){
-        {
-            Button a = findViewById(R.id.receipts);
-            a.setOnClickListener(this::goReceipts);
-        }
-        {
-            Button a = findViewById(R.id.products);
-            a.setOnClickListener(this::goProducts);
-        }
-        {
-            Button a = findViewById(R.id.settings);
-            a.setOnClickListener(this::goSettings);
-        }
-        {
-            Button a = findViewById(R.id.statistics);
-            a.setOnClickListener(this::goStatistics);
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen((GravityCompat.START))) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
     }
 
-    void goReceipts(View view) {
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.receipts_message:
+                goReceipts();
+                break;
+
+            case R.id.stats_message:
+                goStatistics();
+                break;
+
+            case R.id.products_message:
+                goProducts();
+                break;
+
+            case R.id.settings_message:
+                goSettings();
+                break;
+        }
+        return true;
+    }
+
+    //listener for drawer items
+    private void setNavigationViewListener() {
+        NavigationView navigationView = (findViewById(R.id.nav_view));
+        navigationView.setNavigationItemSelectedListener(this);
+    }
+
+
+    void goReceipts() {
+
+
         Intent a = new Intent(this,ReceiptsView.class);
         startActivity(a);
 
 
     }
-    void goStatistics(View view) {
+    void goStatistics() {
         Intent a = new Intent(this, Statistics.class);
         startActivity(a);
 
     }
-    void goSettings(View view) {
+    void goSettings() {
         Intent a = new Intent(this, Settings.class);
         startActivity(a);
 
     }
-    void goProducts(View view) {
+    void goProducts() {
         Intent a = new Intent(this, Products.class);
         startActivity(a);
 
@@ -217,6 +250,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
             //startService(new Intent(this,DataSyncService.class).setAction("companies"));
 
             //login();
@@ -225,6 +259,7 @@ public class MainActivity extends AppCompatActivity {
             menuMultipleActions.collapse();
 
         });
+
 
 
 
