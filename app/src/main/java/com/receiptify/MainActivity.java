@@ -146,6 +146,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         });
 
+        buttons();
+
+
 
 
 
@@ -156,6 +159,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+
         }
     }
 
@@ -187,7 +191,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+
     void goReceipts() {
+
         Intent a = new Intent(this,ReceiptsView.class);
         startActivity(a);
 
@@ -230,6 +236,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         loadPhoto.setOnClickListener(v -> {
 
 
+
             Intent a = new Intent(this, AddReceipt.class).setAction("gallery");
             startActivity(a);
             menuMultipleActions.collapse();});
@@ -247,6 +254,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         });
+
 
 
 
